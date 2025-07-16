@@ -1,5 +1,7 @@
 # Git Play Ground
 
+Hellooooooo
+
 This is a repository for you to familiarize yourself with git. Some instructions/commands below introduce you to the very basics of git. But of course there's much more...
 ## Setting up your git environment
 
