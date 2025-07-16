@@ -7,7 +7,7 @@ project(Greetings)
 # Set the output directory for the compiled executable
 # ${CMAKE_BINARY_DIR} is the build directory (e.g., build/)
 # ../run makes it one level up and into the 'run' directory
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../run)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../bin)
 
 # Add the 'inc' directory to the list of paths for header file lookup
 include_directories(inc)
@@ -26,3 +26,11 @@ add_executable(greetings
 # Link the 'utils' library to the 'greetings' executable
 # PRIVATE means 'utils' is only used internally by 'greetings'
 target_link_libraries(greetings PRIVATE utils)
+
+# ===== Install rules =====
+
+# Install the executable to the bin directory
+install(TARGETS greetings
+    RUNTIME DESTINATION bin
+)
+
