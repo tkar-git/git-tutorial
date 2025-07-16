@@ -5,6 +5,8 @@
 // date: 08.04.25					 //
 // author: Tamasi Kar					 //
 #include <string> 
+#include <sstream> 
+
 #include <utils/tools.h>
 
 int main(int argc, char *argv[]) {
@@ -13,7 +15,9 @@ int main(int argc, char *argv[]) {
 
   if(argc > 1) {
     // if there are arguments passed, use the first one
-    input = argv[1];
+    std::ostringstream oss;
+    oss << "Hello " << argv[1] << "!";
+    input = oss.str();
   } else {
     // if no arguments are passed, use the default message
     input = "Hello, there!";
