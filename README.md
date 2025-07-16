@@ -140,6 +140,7 @@ The best and the recommended way to do this is to create a merge request after e
 You can create a **.gitignore** file in your repository and add the extensions of the files/folders you don't want to add.
 
 For example: you can use your favourite editor and add the following to *.gitignore* to ignore adding/pushing txt and root files to remote.
+Hi Frosso is creating a merge request
 
 ```
 *.txt
